@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+h1, legend {
+    font-family: 'Staatliches', sans-serif;
+}
+
+body, p, input, select, textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #EFEFEF;
+}
+
+body:before {
+    content: '';
+    width: 100%;
+    height: 436px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #535971;
+}
+
+.page {
+    width: 750px;
+    margin: auto;
+}
+
+header {
+    width: 420px;
+    margin-top: 138px;
+}
+
+header h1 {
+    font-size: 48px;    
+    line-height: normal;
+    color: white;
+    margin-bottom: 18px;
+}
+
+header p {
+    color: white;
+    font-size: 20px;
+    line-height: normal;
+}
+
+form {
+    margin-top: 58px;
+    background: white;
+    min-height: 350px;
+    border-radius: 20px 20px 0 0;
+    padding: 64px;
+
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.fieldset-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+fieldset legend{
+    color: #535971;
+    font-size: 24px;    
+    line-height: 34px;
+    width: 100%;
+    border-bottom: 1px solid #E6E6F0;
+    padding-bottom: 16px;
+}
+
+
+.input-wrapper{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.input-wrapper label,
+.checkbox-wrapper label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+    margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+    margin-left: 12px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC
+}
+
+.input-wrapper label span:hover{
+    color: #6C6A71
+}
+
+.input-wrapper input ,.input-wrapper select{
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+    height: 56px;
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6A71
+}
+
+
+.input-wrapper select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 24px top 50%;
+}
+
+
+.name-lastname{
+    display: flex;
+    gap: 22px;
+}
+
+.name-lastname .input-wrapper input {
+    width:100%;
+}
+
+
+
+.col-3{
+    display:flex;
+    gap: 20px
+   
+}
+
+.col-3 > div:nth-child(1) {
+    width: 100%;
+}
+
+
+
+footer {
+    background: #535971;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    padding: 52px 71px;
+    margin-bottom: 100px;
+    border-top: 1px solid #D6D6D6;
+    border-radius: 0 0 20px 20px;
+}
+
+footer .button{
+    height: 56px;
+    border: 0;
+    border-radius: 20px;
+    background: #FF5374;
+    color: #FFF;
+
+    font-family: 'Staatliches', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+footer .button:hover{
+    background: #e34a69;
+}
+
+input:invalid{
+    border: 1px solid #FF1010;
+}
+
+.fieldset-wrapper p {
+    
+    color: #535971;
+
+    font-family: Staatliches;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+}
